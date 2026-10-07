@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    overflow-x: scroll;
+    margin: 0px 20px;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+img{
+    width: 200px;
+    margin: 0px 5px;
+}
