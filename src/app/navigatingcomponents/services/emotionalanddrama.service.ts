@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EmotionalanddramaService {
-    private baseurl = "assets/emotionalanddramaimages.json";
+    private baseurl = "assets/emotionalanddrama.json";
       constructor(private http:HttpClient){}
       onSubmit():Observable<Emotionalanddrama[]>{
         return this.http.get<Emotionalanddrama[]>(this.baseurl);

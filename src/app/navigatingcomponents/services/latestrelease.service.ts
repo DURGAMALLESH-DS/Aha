@@ -7,7 +7,7 @@ import { Latestrelease } from '../models/latestrelease';
   providedIn: 'root'
 })
 export class LatestreleaseService {
-  private baseurl = "assets/images.json";
+  private baseurl = "assets/latestrelease.json";
   private baseurl1 = "http://localhost:8081/api/v1/latestrelease";
   constructor(private http:HttpClient){}
   onSubmit():Observable<Latestrelease[]>{

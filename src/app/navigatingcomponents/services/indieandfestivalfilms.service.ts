@@ -7,7 +7,7 @@ import { Indieandfestivalfilms } from '../models/indieandfestivalfilms';
   providedIn: 'root'
 })
 export class IndieandfestivalfilmsService {
-    private baseurl = "assets/indieandfestivalfilmsimages.json";
+    private baseurl = "assets/indieandfestivalfilms.json";
       constructor(private http:HttpClient){}
       onSubmit():Observable<Indieandfestivalfilms[]>{
         return this.http.get<Indieandfestivalfilms[]>(this.baseurl);

@@ -7,6 +7,12 @@
     display: none;
 }
 img{
-    width: 150px;
+    width: 180px;
     margin: 0px 5px;
+}
+h1{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 35px 25px 10px ;
 }

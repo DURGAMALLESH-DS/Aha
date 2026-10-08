@@ -7,7 +7,7 @@ import { Mostwatchedintelugu } from '../models/mostwatchedintelugu';
   providedIn: 'root'
 })
 export class MostwatchedinteluguService {
-    private baseurl = "assets/mostwatcedinteluguimages.json";
+    private baseurl = "assets/mostwatchedinteluguimages.json";
       constructor(private http:HttpClient){}
       onSubmit():Observable<Mostwatchedintelugu[]>{
         return this.http.get<Mostwatchedintelugu[]>(this.baseurl);
