@@ -8,9 +8,9 @@ import { Latestrelease } from '../models/latestrelease';
 })
 export class LatestreleaseService {
   private baseurl = "assets/latestrelease.json";
-  private baseurl1 = "http://localhost:8081/api/v1/latestrelease";
+  private baseurl1 = "http://localhost:8081/api/v1/latestreleasedata";
   constructor(private http:HttpClient){}
   onSubmit():Observable<Latestrelease[]>{
-    return this.http.get<Latestrelease[]>(this.baseurl);
+    return this.http.get<Latestrelease[]>(this.baseurl1);
   }
 }

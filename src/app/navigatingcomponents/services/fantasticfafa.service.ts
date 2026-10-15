@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class FantasticfafaService {
   private baseurl="assets/fantasticfafa.json"
+  private baseurl1="http://localhost:8081/api/v1/fantasticfafadata"
     constructor(private http:HttpClient){}
     onSubmit():Observable<Fantasticfafa[]>{
       return this.http.get<Fantasticfafa[]>(this.baseurl)
